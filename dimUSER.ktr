@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>dimUSER</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2017&#x2f;12&#x2f;07 09&#x3a;55&#x3a;30.641</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2017&#x2f;12&#x2f;07 09&#x3a;55&#x3a;30.641</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>dw_UserEng</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>dw_taviered</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Tavieprod</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>taviered</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Select values 2</from>
+      <to>transformation about lang , age_code , emp_code , gender , device</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>UsersFromTavie</from>
+      <to>NotExistsUser</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>getGeoid</from>
+      <to>getLicenceId</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>NotExistsUser</from>
+      <to>Select values 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>getLicenceId</from>
+      <to>GetDeviceId</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>GetDeviceId</from>
+      <to>notFoundDevice</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>transformation about lang , age_code , emp_code , gender , device</from>
+      <to>getGeoid</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>DimTime_created</from>
+      <to>getCreated_at_fk &#x28;tsmp&#x29;</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>getCreated_at_fk &#x28;tsmp&#x29;</from>
+      <to>DimUser</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Select values 3</from>
+      <to>DimTime_created</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>toString</from>
+      <to>trsfm Created&#x28;string&#x29;</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>GetOperSysId</from>
+      <to>toString</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>trsfm Created&#x28;string&#x29;</from>
+      <to>Select values 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>GetDeviceId</from>
+      <to>GetOperSysId</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>GetDeviceId</from>
+      <to>Select values</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>DimTime_created</from>
+      <to>DimUser</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>DimTime_created</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>dimtime</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>date_creat_id_n</name>
+        <field>date_dim_id</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>date_dim_id</name>
+        <rename>fk_Created_date_dim_id</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1328</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>DimUser</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <schema/>
+    <table>dimuser</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>user_id</column_name>
+          <stream_name>id</stream_name>
+        </field>
+        <field>
+          <column_name>age</column_name>
+          <stream_name>age</stream_name>
+        </field>
+        <field>
+          <column_name>gender</column_name>
+          <stream_name>gender_n</stream_name>
+        </field>
+        <field>
+          <column_name>language</column_name>
+          <stream_name>language_n</stream_name>
+        </field>
+        <field>
+          <column_name>employment_status</column_name>
+          <stream_name>employment_code</stream_name>
+        </field>
+        <field>
+          <column_name>fk_geoID</column_name>
+          <stream_name>geoID</stream_name>
+        </field>
+        <field>
+          <column_name>fk_licenceId</column_name>
+          <stream_name>fk_licence_id</stream_name>
+        </field>
+        <field>
+          <column_name>fk_deviceId</column_name>
+          <stream_name>fk_deviceID</stream_name>
+        </field>
+        <field>
+          <column_name>fk_operSys</column_name>
+          <stream_name>fk_opersys</stream_name>
+        </field>
+        <field>
+          <column_name>fk_Created_date_dim_id</column_name>
+          <stream_name>fk_Created_date_dim_id</stream_name>
+        </field>
+        <field>
+          <column_name>fk_Created_TimeODid</column_name>
+          <stream_name>fk_Created_TimeODid</stream_name>
+        </field>
+        <field>
+          <column_name>is_migrated</column_name>
+          <stream_name>is_migrated</stream_name>
+        </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1040</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>GetDeviceId</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <cache>Y</cache>
+    <cache_load_all>Y</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>dimdevice</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>devBrand</name>
+        <field>Device Brand</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>devCarr</name>
+        <field>Device Carrier</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>telephone_n</name>
+        <field>HasTelephone</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>devMF</name>
+        <field>Device Manufacturer</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>devMod</name>
+        <field>Device Model</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>DeviceID</name>
+        <rename>fk_deviceID</rename>
+        <default/>
+        <type>None</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>736</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>GetOperSysId</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>dimopersys</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>operating_system</name>
+        <field>Os</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>os_version</name>
+        <field>Os Version</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>OperatingSystemId</name>
+        <rename>fk_opersys</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>NotExistsUser</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>dimuser</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>id</name>
+        <field>UserId</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>UserId</name>
+        <rename>UserId</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+      <value>
+        <name>Gender</name>
+        <rename>Gender</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>      <field>        <name>id</name>
+      </field>      <field>        <name>language_id</name>
+      </field>      <field>        <name>gender</name>
+      </field>      <field>        <name>country</name>
+      </field>      <field>        <name>city</name>
+      </field>      <field>        <name>age_code</name>
+      </field>      <field>        <name>employment_code</name>
+      </field>      <field>        <name>employment_status</name>
+      </field>      <field>        <name>licence_token_id</name>
+      </field>      <field>        <name>device_brand</name>
+      </field>      <field>        <name>devBrand</name>
+      </field>      <field>        <name>device_carrier</name>
+      </field>      <field>        <name>devCarr</name>
+      </field>      <field>        <name>device_manufacturer</name>
+      </field>      <field>        <name>devMF</name>
+      </field>      <field>        <name>device_model</name>
+      </field>      <field>        <name>devMod</name>
+      </field>      <field>        <name>has_telephone</name>
+      </field>      <field>        <name>telephone_n</name>
+      </field>      <field>        <name>operating_system</name>
+      </field>      <field>        <name>os_version</name>
+      </field>      <field>        <name>is_migrated</name>
+      </field>      <field>        <name>last_connection</name>
+      </field>      <field>        <name>created_at</name>
+      </field>      <field>        <name>language_n</name>
+      </field>      <field>        <name>age</name>
+      </field>      <field>        <name>gender_n</name>
+      </field>      <field>        <name>employment_status_n</name>
+      </field>      <field>        <name>fk_licence_id</name>
+      </field>      <field>        <name>fk_deviceID</name>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>736</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>      <field>        <name>id</name>
+      </field>      <field>        <name>language_id</name>
+      </field>      <field>        <name>gender</name>
+      </field>      <field>        <name>country</name>
+      </field>      <field>        <name>city</name>
+      </field>      <field>        <name>age_code</name>
+      </field>      <field>        <name>employment_code</name>
+      </field>      <field>        <name>employment</name>
+        <rename>employment_status</rename>
+      </field>      <field>        <name>licence_token_id</name>
+      </field>      <field>        <name>device_brand</name>
+      </field>      <field>        <name>device_carrier</name>
+      </field>      <field>        <name>has_telephone</name>
+      </field>      <field>        <name>device_manufacturer</name>
+      </field>      <field>        <name>device_model</name>
+      </field>      <field>        <name>operating_system</name>
+      </field>      <field>        <name>os_version</name>
+      </field>      <field>        <name>is_migrated</name>
+      </field>      <field>        <name>last_connection</name>
+      </field>      <field>        <name>created_at</name>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Select values 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>      <field>        <name>id</name>
+      </field>      <field>        <name>language_id</name>
+      </field>      <field>        <name>gender</name>
+      </field>      <field>        <name>country</name>
+      </field>      <field>        <name>city</name>
+      </field>      <field>        <name>age_code</name>
+      </field>      <field>        <name>employment_code</name>
+      </field>      <field>        <name>employment_status</name>
+      </field>      <field>        <name>licence_token_id</name>
+      </field>      <field>        <name>device_brand</name>
+      </field>      <field>        <name>device_carrier</name>
+      </field>      <field>        <name>has_telephone</name>
+      </field>      <field>        <name>device_manufacturer</name>
+      </field>      <field>        <name>device_model</name>
+      </field>      <field>        <name>operating_system</name>
+      </field>      <field>        <name>os_version</name>
+      </field>      <field>        <name>is_migrated</name>
+      </field>      <field>        <name>last_connection</name>
+      </field>      <field>        <name>created_at</name>
+      </field>      <field>        <name>language_n</name>
+      </field>      <field>        <name>age</name>
+      </field>      <field>        <name>gender_n</name>
+      </field>      <field>        <name>employment_status_n</name>
+      </field>      <field>        <name>telephone_n</name>
+      </field>      <field>        <name>devCarr</name>
+      </field>      <field>        <name>devBrand</name>
+      </field>      <field>        <name>devMF</name>
+      </field>      <field>        <name>devMod</name>
+      </field>      <field>        <name>geoID</name>
+      </field>      <field>        <name>contry</name>
+      </field>      <field>        <name>State</name>
+      </field>      <field>        <name>fk_licence_id</name>
+      </field>      <field>        <name>fk_deviceID</name>
+      </field>      <field>        <name>fk_opersys</name>
+      </field>      <field>        <name>st_created_f</name>
+      </field>      <field>        <name>default_st</name>
+      </field>      <field>        <name>i</name>
+      </field>      <field>        <name>date_creat</name>
+      </field>      <field>        <name>day_creat</name>
+      </field>      <field>        <name>month_creat</name>
+      </field>      <field>        <name>year_creat</name>
+      </field>      <field>        <name>hour_creat</name>
+      </field>      <field>        <name>minutes_creat</name>
+      </field>      <field>        <name>secondes_creat</name>
+      </field>      <field>        <name>Ms_creat</name>
+      </field>      <field>        <name>date_creat_id</name>
+      </field>      <field>        <name>date_creat_id_n</name>
+      </field>      <field>        <name>timeOD_id_creat_an</name>
+      </field>      <field>        <name>timeOD_id_creat</name>
+      </field>      <field>        <name>Ms_creat_n_1</name>
+      </field>      <field>        <name>Ms_creat_n_2</name>
+      </field>      <field>        <name>Ms_creat_n</name>
+      </field>      <field>        <name>ch_min</name>
+      </field>      <field>        <name>ch_hr</name>
+      </field>      <field>        <name>ch_se</name>
+      </field>      <field>        <name>ch_hh_mm_ss_ms</name>
+      </field>      <field>        <name>ch_ts</name>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1328</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>UsersFromTavie</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>Tavieprod</connection>
+    <sql>SELECT&#xd;&#xa;  id &#xd;&#xa;, language_id&#xd;&#xa;, gender&#xd;&#xa;&#xd;&#xa;, country&#xd;&#xa;, city&#xd;&#xa;&#xd;&#xa;, age_code&#xd;&#xa;, employment&#xd;&#xa;, employment_code&#xd;&#xa;&#xd;&#xa;, country&#xd;&#xa;, city&#xd;&#xa;&#xd;&#xa;, licence_token_id &#xd;&#xa;&#xd;&#xa;, device_brand&#xd;&#xa;, device_carrier&#xd;&#xa;, has_telephone&#xd;&#xa;, device_manufacturer&#xd;&#xa;, device_model&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;, is_migrated&#xd;&#xa;&#xd;&#xa;, operating_system&#xd;&#xa;, os_version&#xd;&#xa;&#xd;&#xa;, last_connection&#xd;&#xa;, created_at&#xd;&#xa;FROM users&#xd;&#xa;where id &#x3e;446</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>getCreated_at_fk &#x28;tsmp&#x29;</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>dimtimestampod</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>timeOD_id_creat</name>
+        <field>timest</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>Ms_creat_n</name>
+        <field>comma</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>TimeODid</name>
+        <rename>fk_Created_TimeODid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>512</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>getGeoid</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <cache>Y</cache>
+    <cache_load_all>Y</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>dimgeography</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>country</name>
+        <field>Country</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>geoID</name>
+        <rename>geoID</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>getLicenceId</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_UserEng</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>dimlicence</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>licence_token_id</name>
+        <field>LicenceId</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>LicenceId</name>
+        <rename>fk_licence_id</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>notFoundDevice</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>H&#x3a;&#x5c;5eme ann&#xe9;e BI&#x5c;Workspace&#x5c;notFoundDevice</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>id</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>9</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>devBrand</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>255</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>devCarr</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>255</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>telephone_n</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>45</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>devMF</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>255</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>devMod</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>255</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>736</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>toString</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa; var created_at_f &#x3d; created_at&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>created_at_f</name>
+        <rename>created_at_f</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>transformation about lang , age_code , emp_code , gender , device</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#xd;&#xa;&#x2f;&#x2f; ------------------------------------------- LANGUAGE -------------------------------------------------------&#xd;&#xa;&#xd;&#xa;var language_n &#x3d;&#x22;notFound&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;  language_id &#x3d;&#x3d; 1&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;language_n &#x3d; &#x22;en&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if&#x28;  language_id &#x3d;&#x3d; 3&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;language_n &#x3d; &#x22;es&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if&#x28;  language_id &#x3d;&#x3d; 2&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;language_n &#x3d; &#x22;fr&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f; ------------------------------------------- AGE -------------------------------------------------------&#xd;&#xa;&#xd;&#xa;var age &#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28; age_code &#x21;&#x3d; null &#x26;&#x26; age_code&#x21;&#x3d;&#x22;none&#x22;&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;for&#x28;i&#x3d;1&#x3b;i&#x3c; age_code.length&#x3b;i&#x2b;&#x2b;&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;&#xd;&#xa;if&#x28; age_code&#x5b;i&#x5d;&#x3d;&#x3d;&#x27;_&#x27;&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;age&#x3d; age &#x2b; &#x27; &#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else&#xd;&#xa;&#x7b;&#xd;&#xa;age&#x3d; age &#x2b; age_code&#x5b;i&#x5d;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;&#x7d;&#xd;&#xa; else&#xd;&#xa;&#x7b;&#xd;&#xa;age &#x3d;&#x22;none&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f; ------------------------------------------- GENDER  -------------------------------------------------------&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var gender_n&#x3d;&#x22;notFound&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;gender  &#x3d;&#x3d; null &#x7c;&#x7c; gender.toUpperCase&#x28;&#x29; &#x3d;&#x3d; &#x27;NONE&#x27;&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n &#x3d;&#x27;notFound&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;else if&#x28; gender.toUpperCase&#x28;&#x29; &#x3d;&#x3d;&#x27;FEMME&#x27; &#x7c;&#x7c; gender.toUpperCase&#x28;&#x29; &#x3d;&#x3d;&#x27;MUJER&#x27;  &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n &#x3d; &#x27;Female&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;else if&#x28; gender.toUpperCase&#x28;&#x29; &#x3d;&#x3d;&#x27;HOMME&#x27; &#x7c;&#x7c; gender.toUpperCase&#x28;&#x29; &#x3d;&#x3d;&#x27;HOMBRE&#x27;  &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n &#x3d; &#x27;Male&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;  &#xd;&#xa;else if&#x28;gender.toUpperCase&#x28;&#x29;  &#x3d;&#x3d; &#x27;MALE&#x27;&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n &#x3d;&#x27;Male&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else if&#x28;gender.toUpperCase&#x28;&#x29;  &#x3d;&#x3d; &#x27;FEMALE&#x27;&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n &#x3d;&#x27;Female&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else if&#x28;gender.toLowerCase&#x28;&#x29;  &#x3d;&#x3d; &#x27;transg&#xe9;nero&#x27; &#x7c;&#x7c; gender.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;transgenre&#x27; &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n &#x3d;&#x27;Transgender&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else if&#x28;gender.toUpperCase&#x28;&#x29;  &#x3d;&#x3d; &#x27;OTHER&#x27; &#x7c;&#x7c; gender.toUpperCase&#x28;&#x29; &#x3d;&#x3d;&#x27;GENDER&#x27; &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n &#x3d;&#x27;other&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else&#xd;&#xa;&#x7b;&#xd;&#xa;gender_n&#x3d;gender&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f; ------------------------------------------- EMPLOYMENT STATUTS -------------------------------------------------------&#xd;&#xa;&#xd;&#xa;&#xd;&#xa; &#xd;&#xa;var employment_status_n&#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;employment_status  &#x3d;&#x3d; null &#x7c;&#x7c; employment_status.toUpperCase&#x28;&#x29; &#x3d;&#x3d; &#x27;NONE&#x27;&#x7c;&#x7c; employment_status.toUpperCase&#x28;&#x29; &#x3d;&#x3d; &#x27;COUNTRY&#x27;&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;employment_status_n &#x3d;&#x27;notFound&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;else if&#x28; employment_status.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;working full time&#x27; &#x7c;&#x7c; employment_status.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;trabajo jornada completa&#x27;  &#x7c;&#x7c; employment_status.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;employment&#x27; &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;employment_status_n &#x3d; &#x27;Worker&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;else if&#x28; employment_status.toUpperCase&#x28;&#x29; &#x3d;&#x3d;&#x27;STUDENT&#x27; &#x7c;&#x7c; employment_status.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;&#xe9;tudiant&#x27;&#x7c;&#x7c; employment_status.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;estudiante&#x27;  &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;employment_status_n &#x3d; &#x27;Student&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d; &#xd;&#xa;else if&#x28; employment_status.toUpperCase&#x28;&#x29; &#x3d;&#x3d;&#x27;RETIRED&#x27; &#x7c;&#x7c; employment_status.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;retrait&#xe9;&#x27;&#x7c;&#x7c; employment_status.toLowerCase&#x28;&#x29; &#x3d;&#x3d;&#x27;jubilado&#x27;  &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;employment_status_n &#x3d; &#x27;Retired&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;  &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;else  &#xd;&#xa;&#x7b;&#xd;&#xa;employment_status_n &#x3d;&#x27;Unemployed&#x27;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f; ------------------------------------------- DEVICE -------------------------------------------------------&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var telephone_n &#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;has_telephone &#x3d;&#x3d; &#x22;true&#x22;  &#x7c;&#x7c; has_telephone &#x3d;&#x3d; &#x22;1&#x22; &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;&#xd;&#xa;telephone_n &#x3d; &#x27;Y&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;else&#xd;&#xa;&#x7b;&#xd;&#xa;telephone_n &#x3d;&#x27;N&#x27;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var devCarr &#x3d; device_carrier&#xd;&#xa;if&#x28;   device_carrier &#x3d;&#x3d; null  &#x7c;&#x7c; device_carrier &#x3d;&#x3d;&#x27;&#x27;&#x7c;&#x7c; device_carrier &#x3d;&#x3d;&#x27; &#x27; &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;devCarr&#x3d;&#x27;notFound&#x27;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var devBrand ,devMF ,devMod  &#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28; device_brand &#x3d;&#x3d; null   &#x29; &#xd;&#xa;&#x7b;&#xd;&#xa;devBrand &#x3d; &#x27;notFound&#x27;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;if&#x28; device_manufacturer &#x3d;&#x3d; null   &#x29; &#xd;&#xa;&#x7b;&#xd;&#xa;devMF &#x3d; &#x27;notFound&#x27;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if&#x28; device_model &#x3d;&#x3d; null   &#x29; &#xd;&#xa;&#x7b;&#xd;&#xa;devMod &#x3d; &#x27;notFound&#x27;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if&#x28;device_brand &#x21;&#x3d; null &#x29; &#x7b;&#xd;&#xa;devBrand &#x3d; device_brand.trim&#x28;&#x29;&#x3b; &#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if &#x28;device_manufacturer  &#x21;&#x3d; null &#x29;&#x7b; &#xd;&#xa;devMF &#x3d; device_manufacturer.trim&#x28;&#x29;&#x3b;&#x7d;&#xd;&#xa;&#xd;&#xa;if&#x28; device_model &#x21;&#x3d; null&#x29;  &#x7b;&#xd;&#xa;devMod &#x3d; device_model.trim&#x28;&#x29;&#x3b;&#x7d;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>language_n</name>
+        <rename>language_n</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>age</name>
+        <rename>age</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>gender_n</name>
+        <rename>gender_n</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>employment_status_n</name>
+        <rename>employment_status_n</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>telephone_n</name>
+        <rename>telephone_n</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>devCarr</name>
+        <rename>devCarr</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>devBrand</name>
+        <rename>devBrand</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>devMF</name>
+        <rename>devMF</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>devMod</name>
+        <rename>devMod</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>trsfm Created&#x28;string&#x29;</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script> &#xd;&#xa;var st_created_f &#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;var default_st &#x3d;&#x27;00Z&#x27;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;for &#x28;var i &#x3d;0 &#x3b; i&#x3c;  created_at_f.length &#x3b; i&#x2b;&#x2b; &#x29;&#xd;&#xa;&#x7b; &#xd;&#xa;&#xd;&#xa;st_created_f&#x3d; st_created_f&#x2b;created_at_f&#x5b;i&#x5d;&#x3b; &#xd;&#xa;	if&#x28;created_at_f&#x5b;i&#x5d; &#x3d;&#x3d; &#x22; &#x22; &#x26;&#x26; created_at_f&#x5b;i&#x2b;1&#x5d; &#x21;&#x3d; &#x22; &#x22;&#x29;&#xd;&#xa;	&#x7b;	 &#xd;&#xa;		st_created_f&#x3d; st_created_f&#x2b;&#x22;T&#x22;&#x3b;&#xd;&#xa;kk&#x3d;99&#x3b;&#xd;&#xa;     &#x7d;  &#xd;&#xa;&#x7d; &#xd;&#xa;st_created_f &#x3d;st_created_f.replace&#x28;&#x22; &#x22;, &#x22;&#x22;&#x29;&#xd;&#xa;st_created_f &#x3d; st_created_f.concat&#x28;default_st&#x29;&#xd;&#xa;&#xd;&#xa; &#xd;&#xa; &#xd;&#xa;if&#x28;st_created_f &#x21;&#x3d; null &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;if&#x28; st_created_f.toString&#x28;&#x29;.length  &#x3d;&#x3d; 10&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;st_created_f &#x3d; st_created_f &#x2a; 1000&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var date_creat &#x3d; new Date&#x28;st_created_f&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var day_creat &#x3d; date_creat.getDate&#x28;&#x29;&#x3b;&#xd;&#xa;var month_creat &#x3d; date_creat.getMonth&#x28;&#x29;&#x2b;1&#x3b;&#xd;&#xa;var year_creat &#x3d; date_creat.getFullYear&#x28;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var hour_creat &#x3d; date_creat.getHours&#x28;&#x29; &#x3b;&#xd;&#xa;&#xd;&#xa;if&#x28;date_creat.getHours&#x28;&#x29; &#x3d;&#x3d; 0 &#x29; &#x7b;&#xd;&#xa;hour_creat &#x3d; 23&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if&#x28;date_creat.getHours&#x28;&#x29;-1  &#x3e;&#x3d; 0 &#x29; &#x7b;&#xd;&#xa;hour_creat &#x3d; date_creat.getHours&#x28;&#x29;-1&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var minutes_creat &#x3d; date_creat.getMinutes&#x28;&#x29;&#x3b;&#xd;&#xa;var secondes_creat &#x3d; date_creat.getSeconds&#x28;&#x29;&#xd;&#xa;var Ms_creat &#x3d; date_creat.getMilliseconds&#x28;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var date_creat_id &#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;	if&#x28;month_creat.toString&#x28;&#x29;.length &#x3d;&#x3d;2&#x29;&#xd;&#xa;	 &#x7b;	if&#x28;day_creat.toString&#x28;&#x29;.length &#x3d;&#x3d;2 &#x29;&#xd;&#xa;			&#x7b;date_creat_id&#x3d;date_creat_id&#x2b;year_creat&#x2b;month_creat&#x2b;day_creat&#x3b;&#x7d;&#xd;&#xa;		else&#xd;&#xa;			&#x7b;date_creat_id&#x3d;date_creat_id&#x2b;year_creat&#x2b;month_creat&#x2b;&#x22;0&#x22;&#x2b;day_creat&#x3b;&#x7d;&#xd;&#xa;	&#x7d;&#xd;&#xa;	else&#xd;&#xa;	&#x7b;if&#x28;day_creat.toString&#x28;&#x29;.length &#x3d;&#x3d;2 &#x29;&#xd;&#xa;			&#x7b;date_creat_id&#x3d;date_creat_id&#x2b;year_creat&#x2b;&#x22;0&#x22;&#x2b;month_creat&#x2b;day_creat&#x3b;&#x7d;&#xd;&#xa;		else&#xd;&#xa;			&#x7b;date_creat_id&#x3d;date_creat_id&#x2b;year_creat&#x2b;&#x22;0&#x22;&#x2b;month_creat&#x2b;&#x22;0&#x22;&#x2b;day_creat&#x3b;&#x7d;&#xd;&#xa;	&#x7d;&#xd;&#xa;var date_creat_id_n &#x3d;parseInt&#x28;date_creat_id&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;var timeOD_id_creat_an&#x3d; hour_creat&#x2a;3600&#x2b;minutes_creat&#x2a;60&#x2b;secondes_creat&#x2b;Ms_creat&#x2a;0.001&#x3b;&#xd;&#xa;&#xd;&#xa;var timeOD_id_creat&#x3d; hour_creat&#x2a;3600&#x2b;minutes_creat&#x2a;60&#x2b;secondes_creat&#x3b;&#xd;&#xa;var Ms_creat_n_1 &#x3d; Ms_creat&#x2a;0.001&#x3b;&#xd;&#xa;&#x2f;&#x2f;var Ms_creat_n &#x3d;Math.round&#x28;Ms_creat_n_1&#x2a;10&#x29;&#x3b;&#xd;&#xa;var Ms_creat_n_2 &#x3d; Math.round&#x28;&#x28;Ms_creat_n_1&#x2a; 10&#x29; - Ms_creat_n_1&#x29;&#x3b;&#xd;&#xa; &#xd;&#xa;var   Ms_creat_n &#x3d; Math.round&#x28;Ms_creat_n_1&#x2a;10&#x29;&#x3b;&#xd;&#xa;if&#x28;Ms_creat_n.toString&#x28;&#x29;.length&#x3d;&#x3d;2&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;Ms_creat_n &#x3d; 0&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;var ch_min&#x3d;minutes_creat&#x3b;&#xd;&#xa;var ch_hr &#x3d;hour_creat&#x3b;&#xd;&#xa;var ch_se&#x3d;secondes_creat&#x3b;&#xd;&#xa;var ch_hh_mm_ss_ms &#x3d;&#x22;&#x22;&#x3b;&#xd;&#xa;if&#x28;hour_creat.toString&#x28;&#x29;.length&#x21;&#x3d;2 &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	ch_hr&#x3d;&#x27;0&#x27;&#x2b;hour_creat&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;if&#x28;minutes_creat.toString&#x28;&#x29;.length&#x21;&#x3d;2 &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	ch_min&#x3d;&#x27;0&#x27;&#x2b;minutes_creat&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;if&#x28;secondes_creat.toString&#x28;&#x29;.length&#x21;&#x3d;2 &#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;	ch_se&#x3d;&#x27;0&#x27;&#x2b;secondes_creat&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa; ch_hh_mm_ss_ms &#x3d; ch_hr&#x2b;&#x27;&#x3a;&#x27;&#x2b;ch_min&#x2b;&#x27;&#x3a;&#x27;&#x2b;ch_se&#x2b;&#x27;&#x3a;&#x27;&#x2b;Ms_creat&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var ch_ts &#x3d; &#x22;&#x22;&#x3b;&#xd;&#xa;ch_ts&#x3d;ch_ts&#x2b;timeOD_id_creat&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;  </jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>st_created_f</name>
+        <rename>st_created_f</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>default_st</name>
+        <rename>default_st</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>i</name>
+        <rename>i</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>date_creat</name>
+        <rename>date_creat</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>day_creat</name>
+        <rename>day_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>month_creat</name>
+        <rename>month_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>year_creat</name>
+        <rename>year_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>hour_creat</name>
+        <rename>hour_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>minutes_creat</name>
+        <rename>minutes_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>secondes_creat</name>
+        <rename>secondes_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>Ms_creat</name>
+        <rename>Ms_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>date_creat_id</name>
+        <rename>date_creat_id</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>date_creat_id_n</name>
+        <rename>date_creat_id_n</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>timeOD_id_creat_an</name>
+        <rename>timeOD_id_creat_an</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>timeOD_id_creat</name>
+        <rename>timeOD_id_creat</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>Ms_creat_n_1</name>
+        <rename>Ms_creat_n_1</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>Ms_creat_n_2</name>
+        <rename>Ms_creat_n_2</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>Ms_creat_n</name>
+        <rename>Ms_creat_n</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ch_min</name>
+        <rename>ch_min</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ch_hr</name>
+        <rename>ch_hr</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ch_se</name>
+        <rename>ch_se</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ch_hh_mm_ss_ms</name>
+        <rename>ch_hh_mm_ss_ms</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ch_ts</name>
+        <rename>ch_ts</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1168</xloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step_error_handling>
+      <error>
+        <source_step>GetDeviceId</source_step>
+        <target_step>notFoundDevice</target_step>
+        <is_enabled>Y</is_enabled>
+        <nr_valuename/>
+        <descriptions_valuename/>
+        <fields_valuename/>
+        <codes_valuename/>
+        <max_errors/>
+        <max_pct_errors/>
+        <min_pct_rows/>
+      </error>
+      <error>
+        <source_step>NotExistsUser</source_step>
+        <target_step>Select values 2</target_step>
+        <is_enabled>Y</is_enabled>
+        <nr_valuename/>
+        <descriptions_valuename/>
+        <fields_valuename/>
+        <codes_valuename/>
+        <max_errors/>
+        <max_pct_errors/>
+        <min_pct_rows/>
+      </error>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
